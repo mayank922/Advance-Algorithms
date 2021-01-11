@@ -49,7 +49,7 @@ void printBFS(int** edges , int n , int sv,bool* visited)
 
 }
 
-void DFS(int** edges , int n)
+void DFS(int** edges , int n)//for disconnected graph
 {
     bool* visited= new bool[n];
     for (int i=0;i<n;i++)  
@@ -57,7 +57,7 @@ void DFS(int** edges , int n)
         visited[i]=false;
     }
 
-    for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++) 
     {
         if(!visited[i])
         {
